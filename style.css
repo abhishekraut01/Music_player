@@ -18,7 +18,7 @@ html,body{
 #main{
     height: 100%;
     width: 100%;
-    background-color: #000;
+    background-color: #0c0c0c;
     display: flex;
 }
 /* #logo{
@@ -43,7 +43,7 @@ html,body{
 #left{
     height: 100%;
     width: 25%;
-    background-color: aqua;
+    /* background-color: aqua; */
     display: flex;
     text-decoration: none;
     flex-direction: column;
@@ -55,7 +55,7 @@ html,body{
 #left #below{
      display: flex;
      flex-direction: column;
-     background-color: blue;
+     /* background-color: blue; */
      height: 90%;
      width: 80%;
      gap: 30px;
@@ -116,20 +116,20 @@ html,body{
 
 #images{
     height: 30%;
-    background-color: chartreuse;
+    /* background-color: chartreuse; */
     position: relative;
 }
 
 #img-container{
     height: 95%;
     width: 95%;
-    background-color: salmon;
+    /* background-color: salmon; */
     border-radius: 20px;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50% , -50%);
-   
+    box-shadow: 0 0 10px rgba(234, 225, 225, 0.804);
 }
 #img-container img{
     height: 100%;
@@ -141,23 +141,61 @@ html,body{
 
 #songs{
     height: 45%;
-    background-color: sienna;
+    /* background-color: sienna; */
     display: flex;
     flex-direction: column;
+    color: #dadada;
+    font-size: 15px;
 }
 #title h1{
     font-size: 25px;
 }
 #title{
     height: 10%;
-    background-color: #fff;
+    /* background-color: #fff; */
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
 }
 #carts{
     height: 90%;
-    background-color: #ff7272;
+    /* background-color: #ff7272; */
+    /* text-align: center; */
+}
+#carts-heading{
+    height: 10%;
+    display: flex;
+    justify-content: space-between;
+    /* background-color: #5f5d5d; */
+    align-items: center;
+    padding-left:20px ;
+}
+#carts-heading #playing{
+    padding-left: 130px;
+}
+.carts-elem{
+    height: 22%;
+    display: flex;
+    justify-content:space-between;
+    /* background-color: #dadada; */
+    align-items: center;
+    padding-left:20px ;
+}
+
+#song-img{
+    height: 40px;
+    width: 40px;
+    /* background-color: #fff; */
+    border-radius: 5px;
+}
+#song-img img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 4px;
 }
 
 #player{
@@ -168,7 +206,7 @@ html,body{
 #right{
     height: 100%;
     width: 25%;
-    background-color: burlywood;
+    /* background-color: burlywood; */
 }
 
 
