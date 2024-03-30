@@ -34,7 +34,7 @@ html,body{
 }
 #left h1{
     height: 30px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     font-size: 30px;
     display: flex;
     align-items: center;
@@ -90,9 +90,12 @@ html,body{
     border: none;
     outline: none;
     background-color: rgba(37, 37, 37, 0.648);
-    color: #dadada;
+    color: #fff;
     border-radius: 20px;
     padding: 20px 30px;
+    font-size: 2.4vh;
+    font-weight: 100;
+    padding-left: 40px;
 }
 #search-right{
     position: relative;
@@ -108,17 +111,55 @@ html,body{
     top: 30%;
     left: 2%;
     transform: translateY('-50%');
+    cursor: pointer;
 }
 
 #images{
     height: 30%;
     background-color: chartreuse;
+    position: relative;
+}
+
+#img-container{
+    height: 95%;
+    width: 95%;
+    background-color: salmon;
+    border-radius: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+   
+}
+#img-container img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 20px;
 }
 
 #songs{
     height: 45%;
     background-color: sienna;
+    display: flex;
+    flex-direction: column;
 }
+#title h1{
+    font-size: 25px;
+}
+#title{
+    height: 10%;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#carts{
+    height: 90%;
+    background-color: #ff7272;
+}
+
 #player{
     height: 15%;
     background-color: aquamarine;
