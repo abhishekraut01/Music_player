@@ -20,6 +20,7 @@ html,body{
     width: 100%;
     background-color: #0c0c0c;
     display: flex;
+    overflow: hidden;
 }
 /* #logo{
     background-color: red;
@@ -113,6 +114,7 @@ html,body{
     transform: translateY('-50%');
     cursor: pointer;
 }
+/* ___________________________________________________________ */
 
 #images{
     height: 30%;
@@ -138,6 +140,7 @@ html,body{
     object-position: center;
     border-radius: 20px;
 }
+/* ___________________________________________________________ */
 
 #songs{
     height: 45%;
@@ -197,11 +200,124 @@ html,body{
     object-position: center;
     border-radius: 4px;
 }
+/* ______________________________________________________________________ */
 
 #player{
     height: 15%;
-    background-color: aquamarine;
+    /* background-color: aquamarine; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #dadada;
 }
+#up-wrapper{
+    /* background-color: antiquewhite; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 50%;
+}
+#up-wrapper-left{
+    font-size: 23px;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    /* background-color: #fff; */
+    justify-content: center;
+}
+#up-wrapper-mid{
+    padding-left: 18%;
+    font-size: 23px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    /* background-color: #fff; */
+    justify-content: center;
+}
+#up-wrapper-mid > i:nth-child(3) {
+    font-size: 40px;
+    color: rgba(70, 69, 69, 0.833);
+}
+#up-wrapper-right i{
+    font-size: 20px;
+    
+}
+#up-wrapper-right {
+    font-size: 20px;
+    /* background-color: #9c2c2c; */
+}
+
+#down-wrapper{
+    /* background-color: rgb(224, 144, 40); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    width: 100%;
+    height: 50%;
+}
+
+
+
+#down-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+#down-wrapper input[type="range"] {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+    height: 10px;
+    background: linear-gradient(to right, red var(--progress), transparent var(--progress));
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+    margin: 0 10px;
+}
+
+#down-wrapper input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 0;
+    height: 0;
+}
+
+#down-wrapper input[type="range"]::-moz-range-thumb {
+    display: none;
+}
+
+
+
+
+#volume {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 60%;
+    height: 10px;
+    background: linear-gradient(to right, red var(--volume), transparent var(--volume));
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+}
+
+#volume::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 0;
+    height: 0;
+}
+
+#volume::-moz-range-thumb {
+    display: none;
+}
+
+
+
+
+/* _______________________________________________________________ */
 
 #right{
     height: 100%;
