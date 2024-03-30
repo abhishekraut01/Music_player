@@ -1,0 +1,133 @@
+@font-face {
+    font-family:'SF Pro Display';
+    font-style:normal;
+    font-weight:100;
+    src:url(/sf-pro-display_semibold.ttf)
+  }
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'SF Pro Display';
+}
+html,body{
+    height: 100%;
+    width: 100%; 
+}
+#main{
+    height: 100%;
+    width: 100%;
+    background-color: #000;
+    display: flex;
+}
+/* #logo{
+    background-color: red;
+}
+#logo h1 img{
+    height: 40px;
+} */
+#left h1 img{
+    height: 30px;
+    margin-right: 10px;
+    
+}
+#left h1{
+    height: 30px;
+    margin-bottom: 30px;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+}
+
+#left{
+    height: 100%;
+    width: 25%;
+    background-color: aqua;
+    display: flex;
+    text-decoration: none;
+    flex-direction: column;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+#left #below{
+     display: flex;
+     flex-direction: column;
+     background-color: blue;
+     height: 90%;
+     width: 80%;
+     gap: 30px;
+}
+#left #below a{
+    display: flex;
+    gap: 20px;
+}
+#left a{
+    text-decoration: none;
+    color: #fff;
+}
+/* ___________________________________________________________________________ */
+
+#mid{
+    height: 100%;
+    width: 50%;
+    /* background-color: rgb(18, 126, 74); */
+}
+
+#search{
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+    /* background-color: rgb(234, 0, 255); */
+}
+#search-right input{
+    height: 30px;
+    width: 500px;
+    border: none;
+    outline: none;
+    background-color: rgba(37, 37, 37, 0.648);
+    color: #dadada;
+    border-radius: 20px;
+    padding: 20px 30px;
+}
+#search-right{
+    position: relative;
+}
+#search-left i{
+    font-size: 25px;
+    color: #dadada;
+}
+#search-right i{
+    color: #dadada;
+    position: absolute;
+    z-index: 200;
+    top: 30%;
+    left: 2%;
+    transform: translateY('-50%');
+}
+
+#images{
+    height: 30%;
+    background-color: chartreuse;
+}
+
+#songs{
+    height: 45%;
+    background-color: sienna;
+}
+#player{
+    height: 15%;
+    background-color: aquamarine;
+}
+
+#right{
+    height: 100%;
+    width: 25%;
+    background-color: burlywood;
+}
+
+
