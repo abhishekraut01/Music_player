@@ -49,17 +49,21 @@ var arr_of_songs = [
     }]
 
 
-// var clutter = '';
-// arr_of_songs.forEach(function(elem,index){
-//     clutter += ` <div id="carts-elem-1" class="carts-elem">
-//     <h4 id="num">${index+1}</h4>
-//     <div id="song-img">
-//         <img src="${elem.image}"
-//             alt="">
-//     </div>
-//     <h4 id="carts-title">${elem.song_name}</h4>
-//     <div id="playing"> 57,34,533</div>
-//     <h4 id="time">${elem.time}</h4>
-// </div>`
-// })
-// document.querySelector('#songs').innerHTML += clutter;
+var clutter = '';
+arr_of_songs.forEach(function(elem,index){
+    clutter += `<div id="carts-elem-1" class="carts-elem">
+    <h4 id="num">${index+1}</h4>
+    <div id="song-img">
+        <img src="${elem.image}"
+            alt="">
+    </div>
+    <p id="carts-title">${elem.song_name}</p>
+    <div id="playing"> 57,533</div>
+    <h4 id="time">${elem.time}</h4>
+    <h4 id="album">1998</h4>
+</div>`
+})
+
+document.querySelector('#songs').innerHTML += clutter;
+
+var audio  = new Audio();

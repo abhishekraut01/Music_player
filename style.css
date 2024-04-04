@@ -153,20 +153,8 @@ html,body{
 #title h1{
     font-size: 25px;
 }
-#title{
-    height: 10%;
-    /* background-color: #fff; */
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 20px;
-    margin-top: 20px;
-}
-#carts{
-    height: 90%;
-    /* background-color: #ff7272; */
-    /* text-align: center; */
-}
+
+
 #carts-heading{
     height: 10%;
     display: flex;
@@ -174,6 +162,8 @@ html,body{
     /* background-color: #5f5d5d; */
     align-items: center;
     padding-left:20px ;
+    padding-top: 30px;
+    /* padding-bottom: 30px; */
 }
 #carts-heading #playing{
     padding-left: 130px;
@@ -465,3 +455,6 @@ html,body{
     font-size: 15px;
 }
 
+#player i:active {
+scale: 0.9;
+}
